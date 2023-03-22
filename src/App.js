@@ -25,11 +25,19 @@ export default function App() {
          path='/cart' 
          element={<Cart/>}
          />
-      <Route
-       path='/product' 
-      >
-        <Route index element={<product />}/>
-        <Route path='TV' element={<h1>TV</h1>}/>
+         //nested route
+      <Route path='/product'>
+      
+        <Route index element={<product/>}/>
+
+        <Route path='TV' >
+              <Route index element={<h1>TV</h1>}/>
+
+               <Route path='flat' element={<h1>flat TV</h1>}/>
+               
+               
+
+        </Route>
         <Route path='SP' element={<h1>SP</h1>}/>
 
       </Route>
