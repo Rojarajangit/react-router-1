@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 export default function Header() {
   return (
     <div>
-      <h1>Header</h1>
+      
       <NavLink
       to="/"
       style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
@@ -18,13 +18,7 @@ export default function Header() {
     >
       cart
     </NavLink>
-    <NavLink
-      to="/product"
-      style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
-    >
-      product
-    </NavLink>
-      
+    
     </div>
   )
 }

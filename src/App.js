@@ -2,8 +2,10 @@ import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Cart from './component/Cart'
 import Header from './component/Header'
+
 import Home from './component/Home'
 import Product from './component/Product'
+
 
 export default function App() {
   return (
@@ -18,8 +20,10 @@ export default function App() {
          path='/cart' 
          element={<Cart/>}
          />
-       <Route path='/:id' element={<Product />}/>
-       
+      <Route 
+        path='/:id'
+           element={<Product />}/>
+
       </Routes>
       
     </div>
